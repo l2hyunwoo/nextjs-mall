@@ -133,3 +133,13 @@ export type CSSPropertyGridAutoFlow =
   | (string & {})
 
 export type CSSPropertyGridArea = CSSPropertyGlobals | GridLine | (string & {})
+
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    space: any
+    fontSizes: any
+    letterSpacings: string[]
+    lineHeights: string[]
+    colors: any
+  }
+}
