@@ -17,7 +17,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  staticDirs: ["public"],
+  staticDirs: ["../public"],
   babel: async (options) => ({
     ...options,
     plugins: [

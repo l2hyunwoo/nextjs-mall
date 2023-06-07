@@ -19,6 +19,7 @@ export interface TextAreaProps
 
 const StyledTextArea = styled.textarea<{ hasError?: boolean }>`
   color: ${({ theme }) => theme.colors.inputText};
+  // hasError에 따라 borderColor 변경
   border: 1px solid
     ${({ theme, hasError }) =>
       hasError ? theme.colors.danger : theme.colors.border};
